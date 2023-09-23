@@ -7,24 +7,29 @@ import axios from 'axios';
 const baseUrl = 'https://backend.getlinked.ai'
 
 const Contact = () => {
-  // const [responseMessage, setResponseMessage] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
     first_name: '',
     email: '',
     message: '',
-    phone_number: '',
+    // phone_number: '',
   });
 
-
+  
   useEffect(() => {
     axios.post(`${baseUrl}/hackathon/contact-form`)
       .then((response) => response.json())
       .then((data) => {
         setFormData(data);
         console.log('Form submitted successfully');
+        setSuccess(true);
+        setError('');
       })
       .catch((error) => {
-        console.error('Form submission failed');
+        console.error('Form submission failed', error);
+        setError('Form submission failed')
+        
       });
   }, []); 
 
@@ -70,6 +75,10 @@ const Contact = () => {
             </div>
 
             <div className='form-section'>
+                  {error && <div className="error">{error}</div>}
+                {success && (
+                  <div className="success">Message sent!</div>
+                )}
                 <h4 className='assistance'>Questions or need Assistance?<br />Let us know!</h4>
                 <p className='techHackathon hidden'>Email us below to any question related <br /> 
                 to our  event</p>
@@ -95,7 +104,7 @@ const Contact = () => {
                   onChange={(e) => handleChange(e, 'email')}
                     />
 
-                <input
+                {/* <input
                     className="input-name"
                     type="number"
                     id="phone"
@@ -104,10 +113,10 @@ const Contact = () => {
                     value={formData.phone_number}
                     onChange={(e) => handleChange(e, 'phone_number')}
                    
-                        />
+                        /> */}
 
                 <textarea 
-                    className="input-name"
+                    className="input-name textarea"
                     type="text"
                     id="Subject"
                     required
@@ -117,8 +126,8 @@ const Contact = () => {
                     />
               
                  <button className='contact-btn'>Submit</button>
-{/*                   
-                    {responseMessage && <p>{responseMessage}</p>} */}
+                  
+              
                 </form>
             </div>
           </>

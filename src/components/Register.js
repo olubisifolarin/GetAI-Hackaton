@@ -66,17 +66,17 @@ const Register = () => {
 
     return(
         <>
-          <div className='register-section'>
-          {error && <div className={error}>{error}</div>}
-          {registerSuccess && (
-            <Confirmation />
-          )}
+          <div className='register-section'> 
             <div>
                 <img src={register} className='register-img' alt='register' />
-            </div>              
+            </div>             
                 
             <div>
                 <form className='registration'>
+                {error && <div className="error">{error}</div>}
+                {registerSuccess && (
+                    <Confirmation />
+                )}
                     <h2 className='assistance register'>Register</h2>
                     <img src={move} className='move' alt='movement'/>
                     <p className='techHackathon account'>CREATE YOUR ACCOUNT</p>
