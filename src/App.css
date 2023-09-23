@@ -1,0 +1,1361 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: rgba(21, 14, 40, 1);
+  color: white;
+  background-blend-mode: multiply;
+  width: 100%;
+}
+
+.getlinked{
+  font-family: 'Clash Display';
+  font-weight: 700;
+  font-size: 36px;
+  color: white;
+}
+
+.navbar{
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+
+.nav-links{
+  display: flex;
+  gap: 3rem;
+  float: right;
+  margin-right: 6rem;
+  list-style: none;
+  margin-top: -2rem;
+}
+
+.nav-link{
+  text-decoration: none; 
+  color: white;
+}
+
+.nav-link:hover {
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+
+.nav-icon{
+  display: none;
+}
+
+.nav-logo{
+  text-decoration: none;
+}
+
+.linked{
+  color: #D434FE;
+}
+
+span{
+  color:  #FF26B9;
+}
+
+.nav-button{
+  margin-left: 4rem;
+  
+}
+
+.button-link {
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  border-color: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);   
+  border-radius: 3px;
+  width: 170px;
+  height: 45px;
+  color: white;
+  margin-top: -4rem;
+}
+
+.button-link:hover {
+  background: rgba(21, 14, 40, 1);
+  border-image: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%); 
+  border-image-slice: 1; 
+}
+
+
+.nav-line{
+  width: 100%;
+  margin-top: 2rem;
+  border:  0.05px dotted  #FFFFFF; 
+  border: 1px solid rgba(255, 255, 255, 0.18)
+}
+
+.home{
+  margin-left: 6rem;
+}
+
+.home, .Big-idea, .rules, .criteria, .faqs, .Hackaton-announcement{
+  display: flex;
+}
+
+.ignite{
+  float: right;
+  margin-right: -20rem;
+  font-size: 26px;
+  font-style: italic;
+  color: white;
+  margin-top: 2rem;
+}
+
+.title{
+  width: 65%;
+  margin-top: 3rem;
+}
+
+.participate{
+  color: white;
+  margin-top: 1rem;
+  font-weight: 700;
+  margin-bottom: 2.7rem;
+}
+
+.countdown{
+  margin-top: 3rem;
+}
+
+.homeImg{
+  margin-top: 3rem;
+}
+
+.Big-idea{
+  margin-top: 2rem;
+  margin-left: 9rem;
+}
+
+.introduction{
+  margin-left: 6rem;
+  margin-top: 7rem;
+}
+
+.getlink-intro{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: white;
+  font-family: 'Clash display';
+}
+
+.techHackathon{
+  line-height: 2rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.rules-guide{
+  margin-top: 3rem;
+}
+
+.rules{
+  margin-left: 8rem;
+}
+
+.guildline{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Clash display';
+  margin-top: 12rem ;
+  line-height: 2.5rem;
+}
+
+.guild-Img{
+  margin-left: 2rem;
+}
+
+.criteria{
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+.criteriaImg{
+  margin-top: 5rem;
+}
+
+.Judge{
+  margin-left: 3rem;
+}
+
+.judging-criteria{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Clash display';
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.faqs{
+  margin-top: 7rem;
+  margin-left: 8rem;
+}
+
+.frequently-ask{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Clash display';
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.casual{
+  margin-left: 7rem;
+  margin-top: -5rem;
+}
+
+.casual-Img{
+  width: 580px;
+  height: 800px;
+  margin-top: -3rem;
+  margin-left: 2rem;
+}
+
+.question-header{
+  margin-left: 6rem;
+}
+
+.question{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.faq-item{
+  margin-top: 2rem;
+  line-height: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.plus-button{
+  color: #D434FE;
+  cursor: pointer;
+ font-size: 1.5rem;
+}
+
+.hrule{
+  border-color: #D434FE;
+  margin-top: 2rem;
+}
+
+.Hackaton-announcement{
+  margin-left: 10rem;
+  margin-top: 4rem;
+}
+
+.timeline{
+  text-align: center;
+  margin-top: 6rem;
+  color: white;
+}
+
+h4{
+  color: #D434FE;
+  font-size: 1.3rem;
+}
+
+.announcement{
+  margin-top: 5rem;
+}
+
+.timeline-line {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.timeline-hrule {
+  width: 2px; 
+  height: 75px; 
+  margin: 10px 0; 
+  border-color: #D434FE;
+}
+
+.timeline-line p {
+  text-align: center; 
+  margin: 5px 0; 
+  padding: 8px;
+  background-color: #D434FE;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.timeline-subtopic{
+ margin-left: 6rem;
+ margin-top: 2rem;
+}
+
+.price-section{
+  display: flex;
+  margin-top: 7rem;
+}
+
+.price-reward{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Clash display';
+  line-height: 2.5rem;
+}
+
+.reward{
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+.cup-img{
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.sponsor{
+  text-align: center;
+  color: white;
+  margin-top: 6rem;
+}
+
+.partner-section{
+  margin-top: 8rem;
+}
+
+.Partner-img{
+  margin: 3.5rem;
+}
+
+.privacy-section{
+  margin-left: 7rem;
+  margin-top: 6rem;
+  display: flex;
+}
+
+.privacy{
+  color: white;
+  margin-top: 3rem;
+}
+
+.privacy-text{
+  border: 2px solid #D434FE;
+  margin-top: 2rem;
+  width: 85%;
+}
+
+.getlinked-tech{
+  line-height: 2rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.license{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.policy{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Clash display';
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+.privacyImg{
+  margin-left: 2rem;
+  margin-top: -2rem;
+}
+.vector{
+  width: 70%; 
+}
+  
+.logo{
+  width: 70%;
+  height: 700px;
+  margin-top: -17rem;
+}
+
+.input{
+  display: flex;
+  margin-left: 2rem;
+}
+
+.check{
+  margin-top: -0.9rem;
+  border-radius: 50%!important;
+  accent-color: green!important;  
+  
+}
+
+.privacy-button{
+  border: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);   
+  background:  linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%); ;
+  border-radius: 3px;
+  width: 170px;
+  height: 45px;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  margin-left: 13rem;
+}
+
+.privacy-button:hover {
+  background: rgba(21, 14, 40, 1);
+  border-image: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%); /* Apply the gradient border on hover */
+  border-image-slice: 1; 
+}
+
+.footer{
+  display: flex;
+  margin-top: 8rem;
+  margin-left: 6rem;
+}
+
+.address, .call, .phone, .follow-us, .terms{
+  display: flex;
+}
+
+.terms{
+  margin-top: 5rem;
+  color: white;
+}
+
+.term-hrule{
+ border-color: #D434FE;
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+.links{
+  margin-left: 9rem;
+}
+
+.contact{
+  margin-left: 3rem;
+}
+
+.follow-us{
+  margin-top: 2rem;
+}
+
+.socialmedia-img{
+  margin-left: 2rem;
+}
+
+.call-text{
+  margin-left: 2rem;
+  line-height: 2rem;
+  color: white;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.call{
+  width: 5%;
+  height: 15px;
+  margin-top: 1.5rem;
+}
+.all-right{
+  color: white;
+  text-align: center;
+  margin-top: 3.5rem;
+  font-weight: 400;
+}
+
+.getIn-touch{
+  color: #D434FE;
+  margin-top: 3.5rem;
+}
+
+.assistance{
+  line-height: 2rem;
+  color: #D434FE;
+  font-weight: 700;
+}
+.contact-section{
+  display: flex;
+  margin-left: 12rem;
+  margin-top: 6rem;
+}
+
+.form-section{
+  margin-left: 12rem;
+  border: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  width: 48%;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  height: 470px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.hidden{
+  display: none;
+}
+
+.input-name{
+  display: block;
+  width: 90%;
+  margin-bottom: 2.5rem;
+  height: 40px;
+  margin-top: 2rem;
+  border-radius: 1px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));;
+  border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.contact-btn{
+  width: 170px;
+  height: 50px;
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  border-radius: 4px;
+  margin-left: 8rem;
+  color: white;
+}
+
+.register-section{
+  display: flex;
+  margin-top: 3rem;
+  margin-left: -2rem;
+}
+
+
+.registration{
+  border: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));;
+  width: 650px;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  margin-top: 2rem;
+  margin-left: -3rem;
+  height: 670px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.register-input{
+  margin-bottom: 2rem;
+  height: 40px;
+  width: 250px;
+  margin-top: 0.7rem;
+  border-radius: 4px;
+  border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.selection{
+  width: 250px;
+  height: 40px;
+  margin-top: 1rem;
+  border-radius: 4px;
+  border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  color: white;
+}
+
+.review{
+  color: #D434FE;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.wrapper{
+  display: flex;
+  gap: 3rem;
+
+}
+.input-wrapper {
+  display: block;
+  color: white;
+}
+
+.input-container{
+  margin-top: 1rem;
+}
+.register-button{
+  width: 550px;
+  height: 50px;
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  border-radius: 4px;
+  margin-top: 2rem;
+  color: white;
+}
+
+.checkbox{
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%); 
+  margin-top: 1rem;
+  margin-right: 1rem;
+  accent-color: #D434FE;  
+}
+
+.input-check{
+  display: flex;
+}
+
+.confirm{
+  border: #D434FE 1px solid;
+  text-align: center;
+  width: 40%;
+  height: 470px;
+  margin-left: 25rem;
+  margin-top: 5rem;
+}
+
+.congrats{
+  color: white;
+  line-height: 2rem;
+}
+
+.emoji-text{
+  display: flex; 
+  margin-left: 3rem;
+}
+
+.emoji{
+  margin-top: 1.5rem;
+}
+
+.congrat-img{
+  margin-top: 2rem;
+}
+.confirm-btn{
+  width: 380px;
+  height: 50px;
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  border-radius: 4px;
+  margin-top: 2rem;
+  color: white;
+}
+
+
+
+@media (max-width: 600px) {
+html, body{
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  width: 100%;
+}
+.navbar{
+  margin: 2rem;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 75%;
+  height: 600px;
+  top: 120px;
+  left: -150%;
+  transition: 0.5s all;
+  font-size: 1rem;
+  background: linear-gradient(0deg, #150E28, #150E28),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+  z-index: 2; 
+  margin: 0;
+}
+
+.nav-links.active{ 
+  left: 0;
+}
+
+.nav-link{
+  color: white;
+  margin-left: 2rem;
+}
+
+.nav-icon{
+  display: flex;
+  margin-top: -2.5rem;
+  float: right; 
+  font-size: 2.5rem;  
+  color: white;
+}
+
+.button-link{
+  margin: -2rem;
+
+}
+
+.home, .Big-idea, .rules, .criteria, .faqs, .price-section, .privacy-section, .footer, .contact-section, .register-section, .wrapper{
+  display: block;
+}
+
+.home{
+ text-align: center;
+ margin-right: 6rem;
+ margin: 0;
+}
+
+.title{
+  width: 300px;
+}
+
+.ignite{
+ font-size: 0.9rem;
+ float: left;
+ margin-left: 4.5rem;
+ margin-top: 2rem;
+ }
+
+ .Big-idea, .casual, .reward{
+  margin: 0;
+ }
+
+ .idea{
+  width: 80%;
+  margin: 2rem;
+ }
+
+ .introduction{
+  margin-top: 4rem;
+  margin: 0;
+ }
+
+ .getlink-intro, .guildline, .judging-criteria, .faqs, .reward, .sponsor, .privacy{
+  text-align: center;
+  margin-top: 1rem;
+ }
+
+ .techHackathon{
+  word-wrap: break-word;
+  width: 300px;
+  text-align: center;
+  margin-top: 2rem;
+  margin: auto;
+ }
+
+ .rules{
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .guideImg{
+  width: 400px;
+  margin: rem;
+  order: 0;
+  margin-top: 20px;
+ }
+
+.crite-img{
+  width: 360px;
+  margin-left: -1.5rem;
+}
+
+.Judge{
+  margin-left: -2rem;
+}
+.faqs{
+  margin: 0;
+  margin-top: 5rem;
+}
+
+.ptext{
+  margin-left: -1.8rem ;
+  word-wrap: break-word;
+  width: 380px;
+  margin-bottom: 2rem;
+}
+
+.faq-item{
+  text-align: justify;
+  margin-left: 3rem;
+  word-wrap: break-word;
+  width: 280px;
+  margin: 0;
+}
+
+.plus-button{
+  float: right;
+}
+
+.casual-Img{
+  margin: 0;
+  width: 90%;
+  height: 400px;
+  margin-top: -2rem;
+}
+
+
+.question-header{
+  margin: 0;
+  margin-top: 5rem;
+  margin-right: 4rem;
+}
+
+.question{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.Hackaton-announcement {
+  flex-direction: row; 
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.timeline-line {
+  order: -1; 
+  margin: -1rem;
+  margin-top: 1rem;
+}
+
+.announce, .announcement{
+  text-align: justify;
+  padding: 1rem;
+  line-height: normal;
+  margin-left: 0.5rem;
+  margin: 0;
+}
+
+.hack-Line{
+  margin-top: -3rem;
+}
+.timeline-subtopic{
+  display: none;
+}
+
+.cup{
+  width: 350px;
+  margin-left: -2rem;
+  margin-bottom: 2rem;
+}
+
+.rewardImg{
+  width: 330px;
+  margin: 1.5rem;
+  margin-top: 4rem;
+}
+
+.part-Img{
+  width: 300px;
+}
+
+.partner-section{
+ margin-top: 5rem;
+}
+
+.privacy-section{
+  margin: 1rem;
+  margin-top: 4rem;
+}
+.privacy-text{
+  width: 100%;
+}
+
+.getlinked-tech{
+  margin: 1rem;
+}
+
+.check{
+  margin-top: -4rem;
+}
+
+.privacy-button{
+  margin-left: 5.5rem;
+  margin-top: 3rem;
+}
+
+.privacyImg{
+  margin-top: 4rem;
+}
+
+.vector, .logo{
+  height: 370px; 
+  width: 85%;
+}
+
+.footer{
+  margin-left: 2rem;
+}
+
+.foot-text{
+  text-align: justify;
+  word-wrap: break-word;
+  width: 260px;
+  letter-spacing: 0%;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.terms, .links, .contact{
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.term-hrule{
+   margin-left: -9rem; 
+   margin-right: 1rem;
+   margin-top: 2rem;
+ }
+
+ .in-touch{
+  display: none;
+ }
+
+ .contact-section{
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 4rem;
+ }
+
+ .form-section{
+    margin: 0;
+    width: 90%;
+    height: 550px;
+    background: none;
+ }
+
+ .hidden{
+  display: block;
+  margin-left: -3.4rem;
+ }
+
+ .assistance, .input-container, .move, .input-check,.review{
+  margin-left: -2rem;
+ }
+
+ .agreed{
+  margin-left: -1rem;
+ }
+
+ .checkbox{
+  margin-top: -2rem;
+ }
+ .input-name{
+  width: 100%;
+  margin-left: -2rem;
+}
+.contact-btn{
+  margin: 0;
+}
+
+
+.register-img{
+  width: 450px;
+  margin-left: 3rem;
+}
+
+.register-input, .selection{
+  width: 95%;
+}
+
+.label{
+  margin-top: 2rem;
+}
+
+.registration{
+  margin-left: 8rem!important;
+  width: 70%!important;
+  height: 1050px;
+  margin-top: -2rem;
+  background:  none;
+}
+.account{
+  margin-left: -5rem;
+}
+
+.register-button{
+  margin-right: 3rem;
+  width: 60%;
+}
+
+.confirm {
+  width: 80%;
+  height: 520px;
+  margin-left: 2rem;
+}
+.confirm-btn{
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.emoji-text{
+  margin: 0;
+}
+
+.emoji{
+  height: 15px;
+  margin-top: 4.5rem;
+  margin-left: -4.5rem;
+}
+
+.confirm-text{
+  margin: 0;
+}
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  html, body{
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 75%;
+    height: 600px;
+    top: 120px;
+    left: -150%;
+    transition: 0.5s all;
+    font-size: 1rem;
+    background: linear-gradient(0deg, #150E28, #150E28),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+    z-index: 2; 
+    margin: 0;
+  }
+  
+  .nav-links.active{ 
+    left: 0;
+  }
+  
+  .nav-link{
+    color: white;
+    margin-left: 2rem;
+  }
+  
+  .nav-icon{
+    display: flex;
+    margin-top: -2.5rem;
+    float: right; 
+    font-size: 2.5rem;  
+    color: white;
+  }
+
+  .navbar{
+    margin: 2rem;
+  }
+
+  .button-link{
+    margin: -2rem;
+  
+  }
+  .home, .Big-idea, .rules, .criteria, .faqs, .price-section, .privacy-section, .footer, .contact-section, .register-section, .wrapper{
+    display: block;
+  }
+
+  .ignite{
+    font-size: 0.9rem;
+    float: left;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    }
+   
+.home{
+  text-align: center;
+  margin-right: 6rem;
+  margin: 0;
+  }
+  
+.title{
+  width: 500px;
+  margin-right: 1rem;
+}
+  
+.idea{
+  width: 90%;
+  margin: 2rem;
+}
+   
+.introduction{
+  margin-top: 4rem;
+  margin: 0;
+  margin-right: 3rem;
+}
+
+.getlink-intro, .guildline, .judging-criteria, .faqs, .reward, .sponsor, .privacy{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.techHackathon{
+  margin-left: 2rem;
+}
+  
+.rules, .Big-idea, .Judge, .faqs, .reward{
+margin: 0;
+}
+
+.rules{
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+.guideImg{
+width: 670px;
+margin-left: 2rem;
+margin-top: 20px;
+}
+    
+.crite-img{
+width: 670px;
+margin-left: 2rem;
+}
+
+.faq-item{
+  margin-left: 1.5rem;
+  text-align: left;
+}
+
+.faqs{
+  margin-top: 5rem;
+}
+
+.plus-button{
+  float: right;
+  margin-right: 2rem;
+}
+
+.casual-Img{
+  margin: 0;
+  width: 100%;
+  height: 550px;
+  margin-right: 1rem;
+}
+
+.question-header{
+  margin-top: 8rem;
+  margin-left: -7rem;
+}
+
+
+.Hackaton-announcement, .announce{
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.announcement{
+  margin-left: 2rem ;
+}
+
+.timeline-hrule{
+  height: 85px;
+}
+.cup{
+  margin-left: 1rem;
+  margin-bottom: 4rem;
+
+}
+
+.rewardImg{
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+.part-Img{
+  width: 650px;
+  margin-left: 1rem;
+}
+
+.privacy{
+  margin-right: 5rem;
+}
+
+.terms, .links, .contact{
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.foot-text{
+  margin: 0;
+  margin-top: 2rem;
+}
+.call{
+  width: 20px;
+}
+
+.contact-section{
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 6rem;
+ }
+
+ .in-touch{
+  display: none
+ }
+
+ .form-section{
+  margin-left: 4rem;
+  width: 85%;
+  height: 550px;
+  background: none;
+ }
+
+ .hidden{
+  display: block;
+  margin-left: -2rem;
+ }
+
+ .assistance, .input-container, .move, .input-check,.review{
+  margin-left: -2rem;
+ }
+
+ .agreed{
+  margin-left: -1rem;
+ }
+
+ .checkbox{
+  margin-top: -0.1rem;
+ }
+ .input-name{
+  width: 100%;
+  margin-left: -2rem;
+}
+.contact-btn{
+  margin-left: 12rem;
+}
+
+.register-img{
+  max-width: 100%; 
+}
+
+.register-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+
+.register {
+  order: -1;
+
+}
+.register-input, .selection{
+  width: 90%;
+  height: 50px;
+}
+
+.label{
+  margin-top: 2rem;
+}
+
+.registration{
+  margin-left: 5rem;
+  width: 700px;
+  height: 1050px;
+  margin-top: -2rem;
+  background: none;
+}
+
+.account{
+  margin-left: -2rem;
+}
+
+.register-button{
+  margin-left: 2rem;
+  width: 80%;
+}
+
+.agreed{
+  margin-left: 1rem;
+ }
+
+ .checkbox{
+  margin-top: 0.9rem;
+ }
+
+ .confirm {
+  width: 80%;
+  height: 520px;
+  margin-left: 5rem;
+}
+.confirm-btn{
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+
+}
+
+@media (max-width: 1024px) {
+  html, body{
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  width: 100%;
+  
+}
+ .nav-links{
+    gap: 1.5rem;
+  } 
+
+  .Big-idea, .rules, .guide{
+    margin-left: rem;
+  }
+
+  .crite-img{
+    width: 100%;
+  }
+
+  .faqs, .Hackaton-announcement{
+    margin-left: 2rem;
+  }
+ 
+  .cup{
+    width: 100%;
+  }
+
+  .rewardImg{
+    width: 90%;
+  }
+
+  .part-Img{
+    width: 100%;
+  } 
+  .privacy-button{
+    margin-left: rem;
+  }
+  
+  .footer{
+    margin-left: 3rem;
+  }
+
+  .register-section {
+    margin-left: -6rem ;
+  }
+
+  .registration{
+    width: 100%;
+    height: 750px;
+    margin-top: -2rem;
+  }
+
+  .register-input, .selection{
+    width: 90%;
+    height: 50px;
+  }
+
+  .register-button{
+    margin-left: rem;
+    width: 80%;
+  }
+  .confirm{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .contact-section{
+    margin-left: 3rem;
+  }
+
+
+
+
+}
