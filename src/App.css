@@ -4,11 +4,11 @@
   padding: 0;
 }
 
-body{
+body{ 
    background: rgba(21, 14, 40, 1);
   color: white;
-  background-blend-mode: multiply;
   width: 100%;
+  background-blend-mode: luminosity;
   
 }
 
@@ -92,24 +92,75 @@ span{
 
 .home{
   margin-left: 6rem;
+  margin-top: 3rem;
 }
 
 .home, .Big-idea, .rules, .criteria, .faqs, .Hackaton-announcement{
   display: flex;
 }
 
+.star{
+  margin-left: 4rem;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% { transform: scale(1); } 
+  50% { transform: scale(1.2); } 
+  100% { transform: scale(1); } 
+}
+
+.star-image{
+    flex-direction: column;
+    display: flex;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; }
+}
+
 .ignite{
-  float: right;
-  margin-right: -20rem;
   font-size: 26px;
   font-style: italic;
   color: white;
+  margin-right: 7rem;
+  float: right;
   margin-top: 2rem;
+  animation-name: fadeIn;
+  animation-duration: 2s; /* Change the duration to 2 seconds */
+  animation-delay: 0.5s;
+}
+
+.ignite-vector{
+  margin-left: 15rem;
+} 
+
+.getlinked-image{
+  margin-top: 5rem;
+}
+
+.homeImg{
+  margin-left: -7rem;
+} 
+
+.man-image{
+  position: absolute;
+}
+
+.home-image{
+  position: relative;
+  margin-left: 10rem;
 }
 
 .title{
-  width: 65%;
-  margin-top: 3rem;
+  width:  550px;
+  background-blend-mode: hard-light;
 }
 
 .participate{
@@ -123,10 +174,6 @@ span{
   margin-top: 3rem;
 }
 
-.homeImg{
-  margin-top: 3rem;
-}
-
 .Big-idea{
   margin-top: 2rem;
   margin-left: 9rem;
@@ -135,6 +182,11 @@ span{
 .introduction{
   margin-left: 6rem;
   margin-top: 7rem;
+}
+
+.intro-star{
+  flex-direction: column;
+  display: flex;
 }
 
 .getlink-intro{
@@ -165,7 +217,7 @@ span{
   font-weight: 700;
   color: white;
   font-family: 'Clash display';
-  margin-top: 12rem ;
+  margin-top: 9rem ;
   line-height: 2.5rem;
 }
 
@@ -182,6 +234,22 @@ span{
   margin-top: 5rem;
 }
 
+.ellipse{
+  position: absolute;
+  margin-left: 6rem;
+}
+
+.crite-img{
+  position: relative;
+}
+.star-judge{
+  flex-direction: column;
+  display: flex;
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
+
+
 .Judge{
   margin-left: 3rem;
 }
@@ -195,9 +263,34 @@ span{
   padding-bottom: 2rem;
 }
 
+.judge-button{
+  border: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);   
+  background:  linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%); ;
+  border-radius: 3px;
+  width: 170px;
+  height: 45px;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+}
 .faqs{
   margin-top: 7rem;
   margin-left: 8rem;
+}
+
+.star-casual{
+  float: right;
+  margin-right: 7rem;
+  margin-bottom: 3rem;
+  animation: blink 1s infinite; 
+
+}
+
+@keyframes blink {
+  0% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; }
 }
 
 .frequently-ask{
@@ -249,7 +342,7 @@ span{
 }
 
 .Hackaton-announcement{
-  margin-left: 10rem;
+  margin-left: 4rem;
   margin-top: 4rem;
 }
 
@@ -264,6 +357,13 @@ h4{
   font-size: 1.3rem;
 }
 
+.hack-Line {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  margin-left: 9rem;
+}
+
 .announcement{
   margin-top: 5rem;
 }
@@ -273,11 +373,12 @@ h4{
   flex-direction: column; 
   align-items: center;
   margin-left: 4rem;
-}
+  margin-top: -1rem;
+} 
 
 .timeline-hrule {
-  width: 2px; 
-  height: 75px; 
+  width: 2px;
+  height: 70px; 
   margin: 10px 0; 
   border-color: #D434FE;
 }
@@ -297,7 +398,7 @@ h4{
 
 .timeline-subtopic{
  margin-left: 6rem;
- margin-top: 2rem;
+ margin-top: 1rem;
 }
 
 .price-section{
@@ -501,22 +602,22 @@ h4{
 }
 
 .form-section{
-  margin-left: 12rem;
+  margin-left: 10rem;
   border: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
   width: 48%;
   padding-left: 4rem;
   padding-top: 2rem;
-  height: 520px;
+  height: 800px;
   border-radius: 4px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
 }
 
 .success{
-  background-color: white;
-  color: black;
+  background-color: #FF26B9;
+  color: white;
   text-align: center;
-  width: 70%;
-  height: 50px;
+  width: 90%;
+  height: 60px;
   padding: 1rem;
 }
 
@@ -524,12 +625,17 @@ h4{
   background-color: red;
   color: white;
   text-align: center;
-  width: 70%;
-  height: 50px;
+  width: 90%;
+  height: 60px;
   padding: 1rem;
 }
 .textarea{
-  height: 200px;
+  height: 150px;
+  width: 90%;
+  margin-bottom: 2.5rem;
+  border-radius: 1px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));;
+  border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
 }
 .hidden{
   display: none;
@@ -551,7 +657,7 @@ h4{
   height: 50px;
   background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
   border-radius: 4px;
-  margin-left: 8rem;
+  margin-left: 9rem;
   color: white;
 }
 
@@ -564,12 +670,12 @@ h4{
 
 .registration{
   border: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));;
-  width: 650px;
+  width: 600px;
   padding-left: 3rem;
   padding-top: 3rem;
   margin-top: 2rem;
   margin-left: -3rem;
-  height: 670px;
+  height: 780px;
   border-radius: 4px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
 }
@@ -577,7 +683,7 @@ h4{
 .register-input{
   margin-bottom: 2rem;
   height: 40px;
-  width: 250px;
+  width: 230px;
   margin-top: 0.7rem;
   border-radius: 4px;
   border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
@@ -585,7 +691,7 @@ h4{
 }
 
 .selection{
-  width: 250px;
+  width: 230px;
   height: 40px;
   margin-top: 1rem;
   border-radius: 4px;
@@ -614,7 +720,7 @@ h4{
   margin-top: 1rem;
 }
 .register-button{
-  width: 550px;
+  width: 520px;
   height: 50px;
   background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
   border-radius: 4px;
@@ -715,7 +821,7 @@ html, body{
 
 .button-link{
   margin: -2rem;
-
+ margin-top: 1rem;
 }
 
 .home, .Big-idea, .rules, .criteria, .faqs, .price-section, .privacy-section, .footer, .contact-section, .register-section, .wrapper{
@@ -732,10 +838,26 @@ html, body{
   width: 300px;
 }
 
+.man-image{
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  height: 60%;
+}
+
+.home-image{
+  width: 85%;
+  margin-left: -3rem;
+}
+
+.ignite-vector {
+  margin-left: 1.3rem;
+}
+
 .ignite{
  font-size: 0.9rem;
  float: left;
- margin-left: 4.5rem;
+ margin-left: 3rem;
  margin-top: 2rem;
  }
 
@@ -749,8 +871,12 @@ html, body{
  }
 
  .introduction{
-  margin-top: 4rem;
+  margin-top: 6rem;
   margin: 0;
+ }
+
+ .arrow{
+  margin-left:9rem;
  }
 
  .getlink-intro, .guildline, .judging-criteria, .faqs, .reward, .sponsor, .privacy{
@@ -772,10 +898,17 @@ html, body{
   flex-direction: column-reverse;
  }
 
+ .guildline{
+  margin-bottom: 2rem;
+ }
+
+ .ellipse{
+  display: none;
+ }
+
  .guideImg{
   width: 400px;
-  margin: rem;
-  order: 0;
+  margin-left: -2rem;
   margin-top: 20px;
  }
 
@@ -787,8 +920,13 @@ html, body{
 .Judge{
   margin-left: -2rem;
 }
+
+.judge-button{
+  margin-left: 6.5rem;
+}
+
 .faqs{
-  margin: 0;
+  margin: 2rem;
   margin-top: 5rem;
 }
 
@@ -807,6 +945,10 @@ html, body{
   margin: 0;
 }
 
+.frequently-ask{
+  margin-right: 2rem;
+}
+
 .plus-button{
   float: right;
 }
@@ -822,55 +964,75 @@ html, body{
 .question-header{
   margin: 0;
   margin-top: 5rem;
-  margin-right: 4rem;
-}
-
-.question{
-  margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.Hackaton-announcement {
-  flex-direction: row; 
+.question{
+  margin-left: -9rem;
+  margin-right: -8rem;
+}
+
+.Hackaton-announcement{
+  margin-left: 2rem;
+}
+
+.hack-Line{
+  flex-direction: column; 
   align-items: flex-start;
   display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: -3rem;
+  margin-left: 2.5rem;
 }
 
 .timeline-line {
   order: -1; 
-  margin: -1rem;
-  margin-top: 1rem;
+  margin: -4rem;
+  margin-top: 2.2rem;
+}
+
+.time-lining{
+  margin-top: -54rem;
+  margin-left: -2rem;
+}
+
+.announcement-text{
+  font-size: 0.8rem;
+  padding-left: 0.8rem;
 }
 
 .announce, .announcement{
   text-align: justify;
-  padding: 1rem;
+  padding: 0.53rem;
+  padding-left: 0.8rem;
   line-height: normal;
-  margin-left: 0.5rem;
   margin: 0;
+  font-size: 1rem;
 }
 
-.hack-Line{
-  margin-top: -3rem;
-}
 .timeline-subtopic{
-  display: none;
-}
+  margin-left: -2rem;
+  margin-top: 0.6rem;
+} 
 
 .cup{
   width: 350px;
   margin-left: -2rem;
   margin-bottom: 2rem;
+  margin-top: -4rem;
 }
 
+.price-reward{
+  margin-left: 6.5rem;
+}
 .rewardImg{
   width: 330px;
   margin: 1.5rem;
-  margin-top: 4rem;
 }
 
 .part-Img{
   width: 300px;
+  margin-left: -4.5rem
 }
 
 .partner-section{
@@ -881,6 +1043,7 @@ html, body{
   margin: 1rem;
   margin-top: 4rem;
 }
+
 .privacy-text{
   width: 100%;
 }
@@ -920,14 +1083,18 @@ html, body{
   margin-top: 2rem;
 }
 
+.share{
+  margin-top: 9rem;
+}
+
 .terms, .links, .contact{
   margin: 0;
   margin-bottom: 2rem;
 }
 
 .term-hrule{
-   margin-left: -9rem; 
-   margin-right: 1rem;
+   margin-left: -5rem; 
+   margin-right: 2rem;
    margin-top: 2rem;
  }
 
@@ -945,10 +1112,13 @@ html, body{
  .form-section{
     margin: 0;
     width: 90%;
-    height: 550px;
+    height: 650px;
     background: none;
  }
 
+ .share{
+  margin-left: 4rem;
+ }
  .hidden{
   display: block;
   margin-left: -3.4rem;
@@ -969,14 +1139,19 @@ html, body{
   width: 100%;
   margin-left: -2rem;
 }
+
+.textarea{
+    width: 100%;
+    margin-left: -2rem;
+}
 .contact-btn{
-  margin: 0;
+  margin-left: 2rem;
 }
 
 
 .register-img{
   width: 450px;
-  margin-left: 3rem;
+  margin-left: rem;
 }
 
 .register-input, .selection{
@@ -987,10 +1162,14 @@ html, body{
   margin-top: 2rem;
 }
 
+.register-section{
+  margin-bottom: 23rem;
+}
+
 .registration{
-  margin-left: 8rem!important;
+  margin-left: 4rem;
   width: 70%!important;
-  height: 1050px;
+  height: 1000px;
   margin-top: -2rem;
   background:  none;
 }
@@ -999,8 +1178,9 @@ html, body{
 }
 
 .register-button{
-  margin-right: 3rem;
+  margin-right: 2rem;
   width: 60%;
+  margin-bottom: 17rem;
 }
 
 .confirm {
@@ -1018,7 +1198,7 @@ html, body{
 
 .emoji{
   height: 15px;
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   margin-left: -4.5rem;
 }
 
@@ -1027,7 +1207,7 @@ html, body{
 }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 750px) and (max-width: 820px) {
   html, body{
     overflow-x: hidden; 
     scroll-behavior: smooth;
@@ -1073,16 +1253,20 @@ html, body{
 
   .button-link{
     margin: -2rem;
-  
+   margin-top: 2rem
   }
   .home, .Big-idea, .rules, .criteria, .faqs, .price-section, .privacy-section, .footer, .contact-section, .register-section, .wrapper{
     display: block;
   }
 
+  .man-image{
+    margin: 0;
+    height: 57%;
+  }
   .ignite{
     font-size: 0.9rem;
     float: left;
-    margin-left: 12rem;
+    margin-left: 9rem;
     margin-top: 2rem;
     font-size: 1.7rem;
     }
@@ -1102,7 +1286,11 @@ html, body{
   width: 90%;
   margin: 2rem;
 }
-   
+
+.arrow{
+  margin-left: 22rem;
+  margin-bottom: 2rem;
+}
 .introduction{
   margin-top: 4rem;
   margin: 0;
@@ -1133,11 +1321,18 @@ margin-left: 2rem;
 margin-top: 20px;
 }
     
+.ellipse{
+  display: none;
+}
+
 .crite-img{
 width: 670px;
 margin-left: 2rem;
 }
 
+.judge-button{
+  margin-left: 2rem;
+}
 .faq-item{
   margin-left: 1.5rem;
   text-align: left;
@@ -1153,10 +1348,7 @@ margin-left: 2rem;
 }
 
 .casual-Img{
-  margin: 0;
-  width: 100%;
-  height: 550px;
-  margin-right: 1rem;
+  margin-left: -11rem;
 }
 
 .question-header{
@@ -1170,6 +1362,9 @@ margin-left: 2rem;
   margin-top: 1rem;
 }
 
+.hack-Line{
+  margin-left: 1rem;
+}
 .announcement{
   margin-left: 2rem ;
 }
@@ -1178,19 +1373,19 @@ margin-left: 2rem;
   height: 85px;
 }
 .cup{
-  margin-left: 1rem;
+  margin-left: 5rem;
   margin-bottom: 4rem;
 
 }
 
 .rewardImg{
-  margin-left: 4rem;
+  margin-left: 2.3rem;
   margin-top: 4rem;
 }
 
 .part-Img{
   width: 650px;
-  margin-left: 1rem;
+  margin-left: -1.5rem;
 }
 
 .privacy{
@@ -1201,7 +1396,9 @@ margin-left: 2rem;
   margin: 0;
   margin-bottom: 2rem;
 }
-
+.footer{
+  padding-left: 3rem;
+}
 .foot-text{
   margin: 0;
   margin-top: 2rem;
@@ -1228,6 +1425,11 @@ margin-left: 2rem;
   background: none;
  }
 
+ .share{
+  margin-top: 15rem;
+  margin-left: 15rem;
+}
+
  .hidden{
   display: block;
   margin-left: -2rem;
@@ -1248,8 +1450,14 @@ margin-left: 2rem;
   width: 100%;
   margin-left: -2rem;
 }
+
+.textarea{
+  width: 100%;
+  margin-left: -2rem;
+}
+
 .contact-btn{
-  margin-left: 12rem;
+  margin-left: 10rem;
 }
 
 .register-img{
@@ -1276,10 +1484,14 @@ margin-left: 2rem;
   margin-top: 2rem;
 }
 
+.register-section{
+  margin-bottom: 23rem;
+}
+
 .registration{
   margin-left: 5rem;
   width: 700px;
-  height: 1050px;
+  height: 1100px;
   margin-top: -2rem;
   background: none;
 }
@@ -1289,8 +1501,8 @@ margin-left: 2rem;
 }
 
 .register-button{
-  margin-left: 2rem;
-  width: 80%;
+  margin-left: 1rem;
+  width: 65%;
 }
 
 .agreed{
@@ -1314,27 +1526,44 @@ margin-left: 2rem;
 
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1010px) and (max-width: 1024px) {
   html, body{
   overflow-x: hidden; 
   scroll-behavior: smooth;
   width: 100%;
   
 }
- .nav-links{
-    gap: 1.5rem;
-  } 
-
-  .Big-idea, .rules, .guide{
-    margin-left: rem;
+  .nav-line {
+    width: 100%;
   }
 
+  .title{
+    width: 400px;
+  }
+
+  .homeImg{
+    margin-top: 2rem;
+  }
+  .man-image{
+    width: 52%;
+  }
+
+  .home-image{
+    width: 450px
+  }
   .crite-img{
     width: 100%;
   }
 
-  .faqs, .Hackaton-announcement{
+  .Big-idea, .rules{
     margin-left: 2rem;
+  }
+  .faqs{
+    margin-left: 2rem;
+  }
+
+  .Hackaton-announcement{
+    margin-left: -4rem;
   }
  
   .cup{
@@ -1345,12 +1574,6 @@ margin-left: 2rem;
     width: 90%;
   }
 
-  .part-Img{
-    width: 100%;
-  } 
-  .privacy-button{
-    margin-left: rem;
-  }
   
   .footer{
     margin-left: 3rem;
@@ -1381,11 +1604,542 @@ margin-left: 2rem;
     margin-top: 2rem;
   }
   
+  .form-section{
+    height: 700px;
+    margin-right: 5rem;
+  }
   .contact-section{
     margin-left: 3rem;
   }
 
+  .contact-btn{
+    margin-left: 4rem;
+  }
+
+}
+
+@media (min-width: 700px) and (max-width: 770px) {
+html, body{
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  width: 100%;
+  
+}
+  .nav-line {
+    width: 100%;
+  }
+
+.ignite{
+  font-size: 1.2rem;
+  margin-left: 12rem;
+  }
+
+.ignite-vector{
+  margin-left: 2rem;
+}
+  
+.home{
+  text-align: center;
+  margin-right: 6rem;
+  margin: 0;
+  }
+
+  .homeImg{
+    margin-top: 2rem;
+  }
+  .man-image{
+    margin-top: -2rem;
+    height: 500px;
+  }
+
+  .home-image{
+    width: 450px;
+  }
+
+  .casual-Img {
+    margin-left: -5rem;
+}
+
+.cup {
+  margin-left: 4rem;
+}
+
+.rewardImg {
+  margin-left: 2rem;
+}
+
+.part-Img {
+  width: 650px;
+  margin-left: -3rem;
+}
+
+.price-reward {
+  margin-left: 9rem;
+}
 
 
+}
 
+@media (min-width: 900px) and (max-width: 920px) {
+  html, body{
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 75%;
+    height: 600px;
+    top: 120px;
+    left: -150%;
+    transition: 0.5s all;
+    font-size: 1rem;
+    background: linear-gradient(0deg, #150E28, #150E28),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+    z-index: 2; 
+    margin: 0;
+  }
+  
+  .nav-links.active{ 
+    left: 0;
+  }
+  
+  .nav-link{
+    color: white;
+    margin-left: 2rem;
+  }
+  
+  .nav-icon{
+    display: flex;
+    margin-top: -2.5rem;
+    float: right; 
+    font-size: 2.5rem;  
+    color: white;
+  }
+
+  .navbar{
+    margin: 2rem;
+  }
+
+  .button-link{
+    margin: -2rem;
+   margin-top: 2rem
+  }
+  .home, .Big-idea, .rules, .criteria, .faqs, .price-section, .privacy-section, .footer, .contact-section, .register-section, .wrapper{
+    display: block;
+  }
+
+  .man-image{
+    height: 50%;
+  }
+  .ignite{
+    font-size: 0.9rem;
+    float: left;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    }
+   
+.home{
+  text-align: center;
+  margin-right: 6rem;
+  margin: 0;
+  }
+  
+.title{
+  width: 500px;
+  margin-right: 1rem;
+}
+  
+.idea{
+  width: 90%;
+  margin: 2rem;
+}
+
+.arrow{
+  margin-left: 22rem;
+  margin-bottom: 2rem;
+}
+.introduction{
+  margin-top: 4rem;
+  margin: 0;
+  margin-right: 3rem;
+}
+
+.getlink-intro, .guildline, .judging-criteria, .faqs, .reward, .sponsor, .privacy{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.techHackathon{
+  margin-left: 2rem;
+}
+  
+.rules, .Big-idea, .Judge, .faqs, .reward{
+margin: 0;
+}
+
+.guideImg{
+  margin-left: 5rem;
+  }
+      
+  .ellipse{
+    display: none;
+  }
+  
+  .crite-img{
+  margin-left: 4rem;
+  }
+  
+  .judge-button{
+    margin-left: 2rem;
+  }
+
+  .faq-item{
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+  
+  .faqs{
+    margin-top: 5rem;
+  }
+  
+  .plus-button{
+    float: right;
+    margin-right: 2rem;
+  }
+  
+  .casual-Img{
+    margin-left: -10rem;
+  }
+  
+  .question-header{
+    margin-top: 8rem;
+    margin-left: -7rem;
+  }
+  
+  
+  .Hackaton-announcement, .announce{
+    margin: 0;
+    margin-top: 1rem;
+  }
+  
+  .hack-Line{
+    margin-left: 1rem;
+  }
+  .announcement{
+    margin-left: 2rem ;
+  }
+  
+  .timeline-hrule{
+    height: 85px;
+  }
+  .cup{
+    margin-left: 7rem;
+    margin-bottom: 4rem;
+  
+  }
+  
+  .rewardImg{
+    margin-left: 3rem;
+    margin-top: 4rem;
+  }
+  
+  .part-Img{
+    width: 650px;
+    margin-left: 1rem;
+  }
+  
+  .privacy{
+    margin-right: 5rem;
+  }
+
+  .privacy-button {
+    margin-left: 15rem;
+  }
+  
+  .terms, .links, .contact{
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .footer{
+    padding-left: 3rem;
+  }
+  .foot-text{
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .call{
+    width: 20px;
+  }
+  
+  .contact-section{
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 6rem;
+   }
+  
+   .in-touch{
+    display: none
+   }
+  
+   .form-section{
+    margin-left: 4rem;
+    width: 85%;
+    height: 550px;
+    background: none;
+   }
+  
+   .share{
+    margin-top: 15rem;
+    margin-left: 15rem;
+  }
+  
+   .hidden{
+    display: block;
+    margin-left: -2rem;
+   }
+  
+   .assistance, .input-container, .move, .input-check,.review{
+    margin-left: -2rem;
+   }
+  
+   .agreed{
+    margin-left: -1rem;
+   }
+  
+   .checkbox{
+    margin-top: -0.1rem;
+   }
+   .input-name{
+    width: 100%;
+    margin-left: -2rem;
+  }
+  
+  .textarea{
+    width: 100%;
+    margin-left: -2rem;
+  }
+  
+  .contact-btn{
+    margin-left: 10rem;
+  }
+  
+  .register-img{
+    max-width: 100%; 
+  }
+  
+  .register-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  
+  .register {
+    order: -1;
+  
+  }
+  .register-input, .selection{
+    width: 90%;
+    height: 50px;
+  }
+  
+  .label{
+    margin-top: 2rem;
+  }
+  
+  .register-section{
+    margin-bottom: 23rem;
+  }
+  
+  .registration{
+    margin-left: 5rem;
+    width: 700px;
+    height: 1100px;
+    margin-top: -2rem;
+    background: none;
+  }
+  
+  .account{
+    margin-left: -2rem;
+  }
+  
+  .register-button{
+    margin-left: 1rem;
+    width: 65%;
+  }
+  
+  .agreed{
+    margin-left: 1rem;
+   }
+  
+   .checkbox{
+    margin-top: 0.9rem;
+   }
+  
+   .confirm {
+    width: 80%;
+    height: 520px;
+    margin-left: 5rem;
+  }
+  .confirm-btn{
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  
+}
+
+@media (min-width: 500px) and (max-width: 540px) {
+ .ignite {
+    margin-left: 8rem;
+}
+
+.man-image {
+  height: 75%;
+}
+
+.idea{
+  margin-left: 3rem 
+}
+
+.guild-Img {
+  margin-left: 6rem;
+}
+
+.crite-img {
+  margin-left: 4rem;
+}
+
+.judge-button{
+  margin-left: 12rem;
+}
+
+.ptext {
+  margin-left: 2rem;
+}
+
+.faq-item{
+ width: revert;
+}
+
+.question-header{
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.Hackaton-announcement{
+  margin-left: 4rem;
+}
+
+.announce, .announcement{
+  margin-left: 1rem;
+}
+
+.cup {
+  margin-left: 3.5rem;
+}
+
+.rewardImg {
+  width: 400px;
+  margin-left: 4rem;
+}
+
+.part-Img {
+  width: 400px;
+  margin-left: -2.5rem;
+}
+
+.privacy-button {
+  margin-left: 10rem;
+}
+
+.confirm {
+  margin-left: 3rem;
+}
+
+.emoji {
+  margin-top: 2.5rem;
+}
+
+}
+
+
+@media (min-width: 280px) and (max-width: 320px) {
+  html, body{
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+  .ignite, .guild-Img{
+    margin: 0;
+  }
+
+  .man-image{
+    height: 50%;
+  }
+
+  .crite-img{
+   margin-left: -4rem;
+  }
+
+  .judge-button{
+    margin-left: 3.5rem
+  }
+
+  .faq-item, .announce, .foot-text,.techHackathon {
+    width: 200px;
+  }
+
+  .ptext{
+    width: 250px;
+  }
+
+  .price-reward{
+    margin-right: 1rem;
+  }
+
+  .cup{
+    margin-left: -3rem;
+ }
+
+ .rewardImg{
+  width: 250px;
+  margin: 1rem;
+ }
+
+ .part-Img{
+  margin-left: -4.5rem;
+  width: 200px;
+ }
+
+ .privacy-button {
+  margin-left: 2rem;
+ }
+
+ .question-header{
+  margin: 1rem;
+  margin-top: 2rem;
+ }
+
+ .contact-btn{
+  margin-left: -1rem;
+ }
+
+ .share{
+  margin-left: 1rem;
+ }
+
+ .register-img{
+  margin-left: -3rem ;
+ }
+
+ .emoji{
+  margin-top: 4.5rem;
+ }
 }

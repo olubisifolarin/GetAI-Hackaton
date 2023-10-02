@@ -16,7 +16,7 @@ const SelectOption = () => {
         setCategories(data);
       })
       .catch((error) => {
-        // console.error('Error fetching categories:', error);
+        console.error('Error fetching categories:', error);
       });
   }, [baseUrl]); 
 

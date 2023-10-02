@@ -6,8 +6,8 @@ import Overview from './components/Overview';
 import Contact from './components/Contact';
 import Register from './components/Register';
 import Timeline from './components/Timeline';
-
 import Confirmation from './components/Confirmation';
+import Footer from './components/Footer';
 
 
 
@@ -24,7 +24,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/confirm" element={<Confirmation />} />
           </Routes>
-     
+        <Footer />
       </Router>
         
       

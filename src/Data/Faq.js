@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+
 const faqData = [
     {
       question: "Can I work on a project I started before the hackathon?",
@@ -60,7 +61,6 @@ const Faq = () => {
           <hr className="hrule" />
         </div>
       ))}
-      
     </div>
   );
 };

@@ -1,82 +1,78 @@
 import React, {useState} from 'react';
 import register from '../assets/register.png';
 import move from '../assets/move.png';
+import star from '../assets/star.png';
+import star4 from '../assets/star4.png';
 import SelectOption from '../Data/SelectOption';
 import Select from '../Data/Select';
-import { registerUser } from '../APIs/Registration';
+// import { registerUser } from '../APIs/Registration';
 import Confirmation from './Confirmation';
 import axios from 'axios';
 
 
+const baseUrl = 'https://backend.getlinked.ai';
 
 const Register = () => {
   const [teamname, setTeamName] = useState('');
   const [email, setEmail] = useState('');
   const [project, setProject] = useState('');
   const [phone, setPhone] = useState('');
-  const [group, setGroup] = useState('');
-  const [category, setCategory] = useState('');
+  const [Category, setCategory] = useState('');
+  const [Group, setGroup] = useState('');
   const [privacy, setPrivacy] = useState(false);
   const [error, setError] = useState('');
   const [registerSuccess, setRegisterSuccess] = useState(false);
   
-   
+  const user = {
+    team_name: teamname,
+    phone_number: phone,
+    email: email,
+    category: Category,
+    project_topic:project,
+    group_size: Group,
+  }; 
 
-  const baseUrl = 'https://backend.getlinked.ai'
-
-  const handleRegister = (e) => {
+  console.log('User object:', user)
+  const handleRegister = async(e) => {
     e.preventDefault();
-    // Perform validation checks
-    if (!teamname || !project || !email || !phone || !group || !category || !privacy) {
-      setError('All fields are required, and Privacy Policy must be accepted.');
-      return;
+
+    try{
+        await axios.post(
+        `${baseUrl}/hackathon/registration`,{
+            teamname,
+            phone,
+            email,
+            Category,
+            project,
+            Group,
+        });
+        console.log('User registered successfully:');
+        setRegisterSuccess(true);
+        setError('')
+    } catch (error) {
+        setError('An error occurred while registering.');
+        console.error('Form submission failed', error);
+      }
     }
-    setError('');
-
-    const user = {
-      team_name: teamname,
-      phone_number: phone,
-      email: email,
-      category: category,
-      project_topic:project,
-      group_size: group,
-
-    };
     
-    registerUser(user)
-    console.log('User object:', user);
-    return axios
-    .post(
-      `${baseUrl}/hackathon/registration`,
-      registerUser,
-    )
-    .then((response) => {
-      // Handle successful registration here
-      console.log('User registered successfully:', response.data);
-      setRegisterSuccess(true);
-    })
-    .catch((error) => {
-      // Handle registration errors here
-      setError('No Server Response');
-      console.error('Registration Error:', error);
-    });
-
-  }
-    
-
     return(
         <>
           <div className='register-section'> 
             <div>
+                <img src={star4} className="star-image" alt='logo' />
+                <img src={star} className="star" alt='logo' />
                 <img src={register} className='register-img' alt='register' />
+              
             </div>             
-                
+           
             <div>
+            <img src={star} className="star-image" alt='logo' />
                 <form className='registration'>
                 {error && <div className="error">{error}</div>}
                 {registerSuccess && (
                     <Confirmation />
                 )}
+                    <img src={star4} className="star" alt='logo' />
                     <h2 className='assistance register'>Register</h2>
                     <img src={move} className='move' alt='movement'/>
                     <p className='techHackathon account'>CREATE YOUR ACCOUNT</p>
@@ -159,7 +155,7 @@ const Register = () => {
                             <label className="" htmlFor="Category">
                                 Category{' '}
                             </label>
-                            <SelectOption  
+                            <SelectOption
                                 onChange={(e) => {
                                     setCategory(e.target.value);
                               }} 
@@ -170,7 +166,7 @@ const Register = () => {
                             <label className="" htmlFor="group">
                                 Group Size{' '}
                             </label>
-                            <Select 
+                            <Select
                                 onChange={(e) => {
                                     setGroup(e.target.value);
                                   }}
@@ -181,17 +177,19 @@ const Register = () => {
                     
 
                     <p  className='review'>Please review your registration details before submitting</p>
+    
                     <div className='input-check'>
-                        <input name="checkbox" className="checkbox"  type="checkbox" required
+                        <input name="privacy" className="checkbox"  type="checkbox" required
                         checked={privacy}
-                        onChange={(e) => setPrivacy(!privacy)}
+                        onChange={() => setPrivacy(!privacy)}
                         />
                         <p className='techHackathon agreed'>I agreed with the event terms and conditions  and privacy policy</p>
                     </div>
 
                 
 
-                    <button onClick={handleRegister} className='register-button'>Submit</button>
+                    <button onClick={handleRegister}  disabled={!privacy} className='register-button'>Submit</button>
+                    <img src={star} className="star" alt='logo' />
                 </form>
             </div>
         </div>

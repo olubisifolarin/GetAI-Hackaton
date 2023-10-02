@@ -1,13 +1,16 @@
 import React from "react";
 import Theidea from '../assets/Theidea.png';
-
+import star4 from '../assets/star4.png';
+import arrow from '../assets/arrow.png';
 
 const Intro = () => {
     return(
         <div className="">
         <div className='Big-idea'>
                 <div>
+                    <img src={star4} className="intro-star animate__animated animate__flash star" alt='logo' />
                     <img src={Theidea} className='idea' alt='idea' />
+                    <img src={arrow} className="arrow" alt='logo' />
                 </div>
                 <div className='introduction'>
                     <h2 className='getlink-intro'>Introduction to getlinked<br /><span className='linked'>techHackaton 1.0</span></h2>
@@ -18,6 +21,7 @@ const Intro = () => {
                         of technology, and creating solutions that can change the world, <br />
                         that's what we're all about!
                     </p>
+                    <img src={star4} className="animate__animated animate__flash star" alt='logo' />
                 </div>
             </div>
             <hr className="nav-line" />

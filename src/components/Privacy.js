@@ -1,6 +1,8 @@
 import React from "react";
 import Vector from '../assets/Vector.png';
 import logo from '../assets/logo.png';
+import star from '../assets/star.png';
+import star4 from '../assets/star4.png';
 
 
 
@@ -10,12 +12,14 @@ const Privacy = () =>{
         <div className="privacy-section">
             <div className="">
                 <div className="privacy">
+                    <img src={star} className="star" alt='logo' />
                     <h2 className='policy'>Privacy Policy and <br /> <span className="linked">Terms</span></h2>
                     <p>Last updated on September 12, 2023</p>
                     <p className='techHackathon'>
                     Below are our privacy & policy, which outline a lot of goodies. <br />
-                    It’s our aim to     always take of our participant
+                    It’s our aim to always take of our participant
                     </p>
+                    <img src={star4} className="star-casual" alt='logo' />
                 </div>
 
                 <div className="privacy-text">
@@ -35,6 +39,7 @@ const Privacy = () =>{
                         navigate and register for our event
                         </p>
                     </div>
+                    <img src={star4} className="star-casual" alt='logo' />
 
                     <div className="input">
                         <input name="checkbox" className="check" type="checkbox" />
@@ -48,11 +53,13 @@ const Privacy = () =>{
             </div>
             <div className="privacyImg"> 
                 <div>
+                <img src={star} className="star-casual" alt='logo' />
                     <img src={Vector} className="vector" alt="vector" />  
                 </div>
 
                 <div>
                     <img src={logo} className="logo" alt="logo" />
+                    <img src={star} className="star-casual" alt='logo' />
                 </div>
                 
             </div>

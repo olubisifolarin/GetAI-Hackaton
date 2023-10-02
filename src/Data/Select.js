@@ -1,11 +1,11 @@
 import React, { useState, useEffect} from 'react';
 
+const baseUrl = 'https://backend.getlinked.ai'
+
 
 const Select = () => {
   const [selectedOption, setSelectedOption] = useState();
   const [categories, setCategories] = useState([]);
-
-  const baseUrl = 'https://backend.getlinked.ai'
 
   useEffect(() => {
     // Fetch categories from your API endpoint using baseUrl
@@ -17,12 +17,12 @@ const Select = () => {
       .catch((error) => {
         console.error('Error fetching categories:', error);
       });
-  }, [baseUrl]); // I
-  
-
+  }, []); // I
+   
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
+ 
 
   return (
     <>

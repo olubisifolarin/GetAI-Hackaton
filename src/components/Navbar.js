@@ -31,6 +31,7 @@ const Navbar = () => {
                            Timeline
                         </Link>
                     </li>
+
                     <li className="nav-item">
                         <Link to="/overview" className="nav-link" onClick={closeMenu}>
                             Overview
