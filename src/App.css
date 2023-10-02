@@ -857,7 +857,7 @@ html, body{
 .ignite{
  font-size: 0.7rem;
  float: left;
- margin-left: 1rem;
+ margin-left: 3rem;
  margin-top: 2rem;
  }
 
@@ -1023,7 +1023,7 @@ html, body{
 }
 
 .price-reward{
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 .rewardImg{
   width: 330px;
