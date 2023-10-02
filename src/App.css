@@ -842,7 +842,7 @@ html, body{
   width: 100%;
   margin-left: 0.5rem;
   margin-top: 2rem;
-  height: 60%;
+  height: 58%;
 }
 
 .home-image{
@@ -855,9 +855,9 @@ html, body{
 }
 
 .ignite{
- font-size: 0.9rem;
+ font-size: 0.7rem;
  float: left;
- margin-left: 3rem;
+ margin-left: 1rem;
  margin-top: 2rem;
  }
 
@@ -1023,7 +1023,7 @@ html, body{
 }
 
 .price-reward{
-  margin-left: 5.5rem;
+  margin-left: 2rem;
 }
 .rewardImg{
   width: 330px;
