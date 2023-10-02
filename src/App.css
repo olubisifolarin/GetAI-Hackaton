@@ -846,7 +846,7 @@ html, body{
 }
 
 .home-image{
-  width: 85%;
+  width: 87%;
   margin-left: -3rem;
 }
 
@@ -964,7 +964,7 @@ html, body{
 .question-header{
   margin: 0;
   margin-top: 5rem;
-  margin-right: 3rem;
+  margin-right: -3rem;
 }
 
 .question{
@@ -1023,7 +1023,7 @@ html, body{
 }
 
 .price-reward{
-  margin-left: 6.5rem;
+  margin-left: 5.5rem;
 }
 .rewardImg{
   width: 330px;
@@ -1178,7 +1178,7 @@ html, body{
 }
 
 .register-button{
-  margin-right: 2rem;
+  margin-left: 2rem;
   width: 60%;
   margin-bottom: 17rem;
 }
@@ -1501,7 +1501,7 @@ margin-left: 2rem;
 }
 
 .register-button{
-  margin-left: 1rem;
+  margin-left: 3rem;
   width: 65%;
 }
 
@@ -1970,7 +1970,7 @@ margin: 0;
   }
   
   .register-button{
-    margin-left: 1rem;
+    margin-left: 3rem;
     width: 65%;
   }
   
@@ -2056,6 +2056,10 @@ margin: 0;
 
 .privacy-button {
   margin-left: 10rem;
+}
+
+.register-button{
+  margin-left: 4rem;
 }
 
 .confirm {
